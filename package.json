@@ -1,0 +1,14 @@
+
+{
+  "name": "root",
+  "private": true,
+  "scripts": {
+    "install:all": "npm --prefix customer install && npm --prefix saller install",
+    "start": "concurrently -n customer,saller -c green,blue \"cross-env PORT=3000 npm --prefix customer run start\" \"cross-env PORT=3001 npm --prefix saller run start\"",
+    "build": "npm --prefix customer run build && npm --prefix saller run build"
+  },
+  "devDependencies": {
+    "concurrently": "^9.0.0",
+    "cross-env": "^7.0.3"
+  }
+}

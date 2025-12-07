@@ -1,0 +1,63 @@
+.tn-uppernav {
+    width: 100%;
+    background: #ffffff;
+    padding: 8px 0;
+    position: fixed;
+    top: 0;
+    z-index: 10000;
+    border-bottom: 1px solid #eee;
+    direction: rtl;
+    height: 82px;
+}
+
+.tn-uppernav-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.tn-nav-logo {
+  width: 7%;
+}
+
+.tn-search-box {
+  width: 45%;
+  position: relative;
+}
+
+.tn-search-box input {
+  width: 100%;
+  padding: 12px 18px;
+  border-radius: 30px;
+  border: none;
+  background: #f1f1f1;
+  font-size: 16px;
+  outline: none;
+}
+
+.tn-search-icon {
+  position: absolute;
+  left: 93%;
+  top: 34%;
+}
+
+.tn-left-icons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.tn-nav-icon {
+  font-size: 22px;
+  color: #0c317a;
+  cursor: pointer;
+}
+
+.tn-lang-btn {
+  background: #ffe8e1;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 14px;
+  color: #0c317a;
+  cursor: pointer;
+}
